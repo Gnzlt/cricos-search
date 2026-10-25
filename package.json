@@ -1,0 +1,14 @@
+{
+  "name": "cricos-search",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Fast, mobile-friendly search for CRICOS-registered courses in Australia",
+  "scripts": {
+    "data": "node scripts/fetch-data.mjs",
+    "test": "node --test test/*.test.mjs",
+    "start": "python3 -m http.server 8765 --directory public"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CRICOS Search: find and compare courses for international students in Australia</title>
+  <meta name="description" content="Search and compare 25,000+ CRICOS-registered courses and 1,500+ providers for international students in Australia. Filter by state, level, duration and cost.">
+  <link rel="canonical" href="https://cricos.gnzlt.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CRICOS Search">
+  <meta property="og:title" content="CRICOS Search: find and compare courses in Australia">
+  <meta property="og:description" content="Search and compare 25,000+ CRICOS-registered courses for international students. Filter by state, level, duration and cost.">
+  <meta property="og:url" content="https://cricos.gnzlt.com/">
+  <meta property="og:image" content="https://cricos.gnzlt.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#98012e">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CRICOS Search","url":"https://cricos.gnzlt.com/","description":"Unofficial search for CRICOS-registered courses in Australia","inLanguage":"en-AU"}</script>
+  <script type="module" src="js/app.js"></script>
+  <link rel="modulepreload" href="js/data.js">
+  <link rel="modulepreload" href="js/search.js">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <a class="brand" href="#/">CRICOS Search</a>
+    <nav aria-label="Main">
+      <a href="#/" data-nav="search">Courses</a>
+      <a href="/providers/">Providers</a>
+      <a href="#/compare" data-nav="compare">Compare <span id="cmp-count" class="badge" hidden></span></a>
+      <a href="#/about" data-nav="about">About</a>
+    </nav>
+  </header>
+  <!-- The intro is painted before the data loads; keep it in sync with searchView() in js/app.js. -->
+  <main id="main" class="app" tabindex="-1">
+    <section class="intro" id="intro">
+      <img class="intro-logo" src="/logo.webp" width="64" height="64" alt="">
+      <h1>Find a course you can study in Australia on a student visa</h1>
+      <p class="lead">Search the official CRICOS register: every course that international students can enrol in on an Australian student visa. Filter by place, level, length and cost, then compare courses side by side.</p>
+      <p class="stats">Loading course data…</p>
+    </section>
+    <noscript><p>The search needs JavaScript. Without it, <a href="/providers/">browse all providers</a> and their courses.</p></noscript></main>
+  <footer class="foot">
+    <p id="foot-data">Data: CRICOS register, Australian Government Department of Education (<a href="https://data.gov.au/data/dataset/cricos" rel="noopener">data.gov.au</a>, CC BY 2.5 AU).</p>
+    <p>Unofficial. Not affiliated with the Australian Government or the Department of Education. Always confirm details with the provider and on the official <a href="https://cricos.education.gov.au/" rel="noopener">CRICOS register</a>.</p>
+    <p class="credit">Made by <a href="https://gnzlt.com" rel="noopener">gnzlt.com</a> · <a href="https://github.com/Gnzlt/cricos-search" rel="noopener">Source code</a></p>
+  </footer>
+</body>
+</html>
